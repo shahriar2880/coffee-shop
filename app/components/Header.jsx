@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import Image from "next/image"
 import {
+  Button,
   Dialog,
   DialogPanel,
   Disclosure,
@@ -19,6 +20,7 @@ import {
   ChartPieIcon,
   CursorArrowRaysIcon,
   FingerPrintIcon,
+  ShoppingBagIcon,
   SquaresPlusIcon,
   XMarkIcon,
 } from '@heroicons/react/24/outline'
@@ -82,10 +84,14 @@ const Header = () => {
             Alowishus Catering
           </a>
         </PopoverGroup>
-        <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a href="#" className="text-sm/6 font-semibold text-gray-900">
-            Log in <span aria-hidden="true">&rarr;</span>
+        <div className="hidden lg:flex lg:flex-1 lg:justify-end items-center gap-5">
+          <a href="#" className="text-sm font-semibold text-gray-900 leading-6">
+            <ShoppingBagIcon
+              width={35}
+              className='hover:cursor-pointer bg-gray-900 text-white p-2 rounded-full shadow-lg'
+            />
           </a>
+          <Button className="bg-gray-900 text-white p-3 rounded-md shadow-lg hover:scale-105 transition-all">{""} Buy Gift Vouchers</Button>
         </div>
       </nav>
       <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden">
