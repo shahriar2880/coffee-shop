@@ -53,11 +53,13 @@ const Header = () => {
         <div className="flex lg:flex-1">
           <a href="#" className="-m-1.5 p-1.5">
             <span className="sr-only">Your Company</span>
-            {/* <Image
-              alt=""
-              src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=600"
-              className="h-8 w-auto"
-            /> */}
+            <Image
+              alt="coffee shop logo"
+              src="/images/coffee-logo.png"
+              className="h-16 w-16"
+              width={130}
+              height={90}
+            />
           </a>
         </div>
         <div className="flex lg:hidden">
@@ -71,16 +73,16 @@ const Header = () => {
           </button>
         </div>
         <PopoverGroup className="hidden lg:flex lg:gap-x-12">
-          <a href="#" className="text-sm/6 font-semibold text-gray-900">
+          <a href="#" className="text-lg font-bold text-gray-900">
             Cafe Menu
           </a>
-          <a href="#" className="text-sm/6 font-semibold text-gray-900">
+          <a href="#" className="text-lg font-bold text-gray-900">
             About Us
           </a>
-          <a href="#" className="text-sm/6 font-semibold text-gray-900">
+          <a href="#" className="text-lg font-bold text-gray-900">
             Find Us
           </a>
-          <a href="#" className="text-sm/6 font-semibold text-gray-900">
+          <a href="#" className="text-lg font-bold text-gray-900">
             Alowishus Catering
           </a>
         </PopoverGroup>
@@ -88,7 +90,7 @@ const Header = () => {
           <a href="#" className="text-sm font-semibold text-gray-900 leading-6">
             <ShoppingBagIcon
               width={35}
-              className='hover:cursor-pointer bg-gray-900 text-white p-2 rounded-full shadow-lg'
+              className='hover:cursor-pointer bg-gray-50 hover:bg-gray-100 p-2 rounded-full shadow-lg shadow-gray-300 hover:scale-105 transition-all'
             />
           </a>
           <Button className="bg-gray-900 text-white p-3 rounded-md shadow-lg hover:scale-105 transition-all">{""} Buy Gift Vouchers</Button>
