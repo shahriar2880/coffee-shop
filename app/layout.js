@@ -1,7 +1,7 @@
 import { Geist, Geist_Mono, Jost } from "next/font/google";
 import "./globals.css";
 
-const jost = Jost({subsets: ["latin"]})
+const jost = Jost({subsets: ["cyrillic"]})
 
 export const metadata = {
   title: "Coffee Shop",

@@ -48,7 +48,7 @@ const Header = () => {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   return (
     <header className="bg-white">
-      <nav aria-label="Global" className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
+      <nav aria-label="Global" className="max-w-full flex items-center justify-between py-6">
       {/* -------------------------------------------- */}
         <div className="flex lg:flex-1">
           <a href="#" className="-m-1.5 p-1.5">
@@ -56,9 +56,9 @@ const Header = () => {
             <Image
               alt="coffee shop logo"
               src="/images/coffee-logo.png"
-              className="h-16 w-16"
-              width={130}
-              height={90}
+              className=""
+              width={60}
+              height={20}
             />
           </a>
         </div>
@@ -72,17 +72,17 @@ const Header = () => {
             <Bars3Icon aria-hidden="true" className="size-6" />
           </button>
         </div>
-        <PopoverGroup className="hidden lg:flex lg:gap-x-12">
-          <a href="#" className="text-lg font-bold text-gray-900">
+        <PopoverGroup className="hidden lg:flex lg:gap-x-16">
+          <a href="#" className="text-md font-medium text-gray-900">
             Cafe Menu
           </a>
-          <a href="#" className="text-lg font-bold text-gray-900">
+          <a href="#" className="text-md font-medium text-gray-900">
             About Us
           </a>
-          <a href="#" className="text-lg font-bold text-gray-900">
+          <a href="#" className="text-md font-medium text-gray-900">
             Find Us
           </a>
-          <a href="#" className="text-lg font-bold text-gray-900">
+          <a href="#" className="text-md font-medium text-gray-900">
             Alowishus Catering
           </a>
         </PopoverGroup>
