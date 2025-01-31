@@ -33,9 +33,10 @@ const Banner = () => {
         <SwiperSlide>
             <div className="container">
                 <div className="grid grid-cols-2">
-                    <div className="">
-                        <h1>Espresso Delicious Coffee <Image height={80} width={80} alt="cafe" src="/images/cafe.png"/> </h1>
-                        <p>A drink from the "My Alowishus" bolted brews range QR grab one of our delicious coffee's</p>
+                    <div className=" relative">
+                        <h1 className="text-8xl font-bold py-4">Espresso Delicious Coffee {""}</h1>
+                        <div className="absolute top-56 mt-1 right-1"><Image height={80} width={80} alt="cafe" src="/images/cafe.png"/> </div>
+                        <p className="py-4">A drink from the "My Alowishus" bolted brews range QR grab one of our delicious coffee's</p>
                         <div className=" flex gap-4 py-6">
                             <Button className='p-7 rounded-full shadow-lg hover:scale-105 transition-all text-lg font-normal tracking-wide'>Download App </Button>
                             <Button className='p-7 rounded-full shadow-lg hover:scale-105 transition-all text-lg font-normal tracking-wide' variant="outline">Shop Coffee </Button>
