@@ -33,7 +33,7 @@ const Banner = () => {
             <div className="container">
                 <div className="grid grid-cols-2">
                     <div className="">
-                        <h1>Espresso Delicious Coffee <Image height={20} width={20} alt="web" src="/images/cafe.png"/> </h1>
+                        <h1>Espresso Delicious Coffee <Image height={80} width={80} alt="cafe" src="/images/cafe.png"/> </h1>
                         <p>A drink from the "My Alowishus" bolted brews range QR grab one of our delicious coffee's</p>
                         <div>
                             <button>Download App </button>
