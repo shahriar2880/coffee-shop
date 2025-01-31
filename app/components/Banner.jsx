@@ -11,6 +11,7 @@ import "swiper/css/pagination";
 
 // import required modules
 import { Autoplay, Pagination } from "swiper/modules";
+import Image from "next/image";
 
 const Banner = () => {
   return (
@@ -19,7 +20,7 @@ const Banner = () => {
         spaceBetween={30}
         centeredSlides={true}
         autoplay={{
-          delay: 2500,
+          delay: 3000,
           disableOnInteraction: false,
         }}
         pagination={{
@@ -28,15 +29,21 @@ const Banner = () => {
         modules={[Autoplay, Pagination]}
         className="mySwiper"
       >
-        <SwiperSlide>Slide 1</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
-        <SwiperSlide>Slide 6</SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
-        <SwiperSlide>Slide 8</SwiperSlide>
-        <SwiperSlide>Slide 9</SwiperSlide>
+        <SwiperSlide>
+            <div className="container">
+                <div className="grid grid-cols-2">
+                    <div className="">
+                        <h1>Espresso Delicious Coffee <Image height={20} width={20} alt="web" src="/images/cafe.png"/> </h1>
+                        <p>A drink from the "My Alowishus" bolted brews range QR grab one of our delicious coffee's</p>
+                        <div>
+                            <button>Download App </button>
+                            <button>Shop Coffee </button>
+                        </div>
+                    </div>
+                    <div className="">asdfg</div>
+                </div>
+            </div>
+        </SwiperSlide>
       </Swiper>
     </div>
   );
