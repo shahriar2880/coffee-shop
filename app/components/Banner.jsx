@@ -12,6 +12,7 @@ import "swiper/css/pagination";
 // import required modules
 import { Autoplay, Pagination } from "swiper/modules";
 import Image from "next/image";
+import { Button } from "@/components/ui/button";
 
 const Banner = () => {
   return (
@@ -35,9 +36,9 @@ const Banner = () => {
                     <div className="">
                         <h1>Espresso Delicious Coffee <Image height={80} width={80} alt="cafe" src="/images/cafe.png"/> </h1>
                         <p>A drink from the "My Alowishus" bolted brews range QR grab one of our delicious coffee's</p>
-                        <div>
-                            <button>Download App </button>
-                            <button>Shop Coffee </button>
+                        <div className=" flex gap-4 py-6">
+                            <Button className='p-7 rounded-full shadow-lg hover:scale-105 transition-all text-lg font-normal tracking-wide'>Download App </Button>
+                            <Button className='p-7 rounded-full shadow-lg hover:scale-105 transition-all text-lg font-normal tracking-wide' variant="outline">Shop Coffee </Button>
                         </div>
                     </div>
                     <div className="">asdfg</div>
